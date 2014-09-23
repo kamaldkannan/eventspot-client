@@ -1,7 +1,7 @@
 angular.module('ionicApp', ['ionic','ngResource'])
 
     .factory('userResource', function($resource) {
-        return $resource('http://localhost:2403/user1/');
+        return $resource('http://localhost:2403/users/');
     })
 
     .config(function($stateProvider, $urlRouterProvider) {
